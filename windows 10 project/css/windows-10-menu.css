@@ -1,0 +1,348 @@
+@media (min-width: 768px) {
+  .w-dropdown-menu {
+    width: 600px;
+  }
+}
+.w-dropdown-menu.open {
+  visibility: visible;
+  opacity: 1;
+  margin-right: 0px;
+}
+
+.w-dropdown-menu .menu-list {
+  float: left;
+  width: calc(100% - 30px);
+  padding: 15px;
+}
+
+.w-dropdown-menu .menu-grid {
+  float: left;
+  width: calc(100%);
+  padding: 15px;
+}
+
+.w-dropdown-menu .menu-grid .menu-subtitle {
+  padding: 15px 0px 10px;
+}
+
+.w-dropdown-menu .menu-subtitle {
+  color: #d0d0d0;
+  font-size: 12px;
+  display: block;
+  padding: 5px 0px 10px;
+  float: none;
+  clear: both;
+}
+
+@media (min-width: 600px) {
+  .w-dropdown-menu .menu-list {
+    width: calc(33.333% - 22.5px);
+    padding: 15px 7.5px 15px 15px;
+  }
+  .w-dropdown-menu .menu-grid {
+    width: calc(66.666% - 22.5px);
+    padding: 15px 15px 15px 7.5px;
+  }
+}
+
+/* items of dropdown menu */
+.user {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.user img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+
+.apps {
+  list-style: none;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+  line-height: 30px;
+}
+
+.apps li a {
+  color: #fff;
+  padding: 2px;
+  display: block;
+  text-decoration: none;
+}
+
+.apps li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.apps li a:active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.apps li .icon {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.apps li:nth-child(4n + 1) .icon {
+  background: #1691be;
+}
+
+.apps li:nth-child(4n + 2) .icon {
+  background: #166ba2;
+}
+
+.apps li:nth-child(4n + 3) .icon {
+  background: #1d4056;
+}
+
+.apps li:nth-child(4n + 4) .icon {
+  background: #34495e;
+}
+
+.w-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  opacity: 0.5;
+  padding: 2px 9px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 350ms;
+  -webkit-transition: opacity 350ms;
+}
+
+.w-close:hover {
+  opacity: 0.8;
+}
+
+.w-close:active {
+  opacity: 1;
+}
+
+/* square items */
+.squares .square-big {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 2px;
+  width: calc(50% - 4px);
+  padding-bottom: calc(50% - 4px);
+}
+
+.squares .square-big .icon {
+  background-color: #3498db;
+  position: absolute;
+  margin: auto;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.squares .square-big .icon .icon-image {
+  max-width: 60px;
+  max-height: 60px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 5px;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+}
+
+.squares .square-big .icon .icon-font {
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  max-width: 60px;
+  max-height: 60px;
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 10, 0.3);
+}
+
+.squares .square-big .icon .icon-title {
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 10, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 6px;
+}
+
+.squares .square-big .icon:hover:before {
+  content: "";
+  display: block;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  position: absolute;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.squares .square-big .icon:active {
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+  transform: scale(0.95);
+}
+
+@media (min-width: 480px) {
+  .squares .square-big {
+    width: calc(33.333% - 4px);
+    padding-bottom: calc(33.333% - 4px);
+  }
+}
+
+.squares .square-big:nth-child(4n + 4) .icon {
+  background: #1691be;
+}
+
+.squares .square-big:nth-child(4n + 3) .icon {
+  background: #166ba2;
+}
+
+.squares .square-big:nth-child(4n + 2) .icon {
+  background: #1d4056;
+}
+
+.squares .square-big:nth-child(4n + 1) .icon {
+  background: #34495e;
+}
+
+.squares .square-mult {
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+
+@media (min-width: 480px) {
+  .squares .square-mult {
+    width: 33.333%;
+  }
+}
+
+.squares .square-mult .sub-square {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 2px;
+  width: calc(50% - 4px);
+  padding-bottom: calc(50% - 4px);
+}
+
+.squares .square-mult .sub-square .icon {
+  background-color: #3498db;
+  position: absolute;
+  margin: auto;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.squares .square-mult .sub-square .icon .icon-image {
+  max-width: 60px;
+  max-height: 60px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 5px;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+}
+
+.squares .square-mult .sub-square .icon .icon-font {
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  max-width: 60px;
+  max-height: 60px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 10, 0.3);
+}
+
+.squares .square-mult .sub-square .icon .icon-title {
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 10, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 6px;
+}
+
+.squares .square-mult .sub-square .icon:hover:before {
+  content: "";
+  display: block;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  position: absolute;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.squares .square-mult .sub-square .icon:active {
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+  transform: scale(0.95);
+}
+
+.squares .square-mult .sub-square:nth-child(4n + 4) .icon {
+  background: #1691be;
+}
+
+.squares .square-mult .sub-square:nth-child(4n + 3) .icon {
+  background: #166ba2;
+}
+
+.squares .square-mult .sub-square:nth-child(4n + 2) .icon {
+  background: #1d4056;
+}
+
+.squares .square-mult .sub-square:nth-child(4n + 1) .icon {
+  background: #34495e;
+}
